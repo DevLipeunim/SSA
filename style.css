@@ -1,0 +1,333 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif !important;
+	background-color: #333333;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+main {
+	width: 100%;
+	height: 900px;
+	background-image: url("images/SSA.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.u-section-1 {
+	padding-top: 390px;
+	padding-left: 150px;
+	line-height: 100px;
+}
+
+.u-section-1 .u-text-1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 90px;
+	font-size: 4rem;
+	color: white;
+	text-shadow: 4px 4px 4px #222;
+}
+
+.u-section-1 .u-text-2 {
+	font-size: 30px;
+	color: greenyellow;
+	text-shadow: 2px 2px 2px #222;
+}
+
+#buttonContainer {
+	display: flex;
+	gap: 90px;
+}
+
+
+
+.button {
+	font: 15px Calibri, Arial, sans-serif;
+
+	/* A semi-transparent text shadow */
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+
+	/* Overriding the default underline styling of the links */
+	text-decoration: none !important;
+	white-space: nowrap;
+
+	display: inline-block;
+	vertical-align: baseline;
+	position: relative;
+	cursor: pointer;
+	padding: 10px 20px;
+
+	background-repeat: no-repeat;
+
+	/* The following two rules are fallbacks, in case
+	   the browser does not support multiple backgrounds. */
+
+	background-position: bottom left;
+	background-image: url('button_bg.png');
+
+	/* Multiple backgrounds version. The background images
+	   are defined individually in color classes */
+
+	background-position: bottom left, top right, 0 0, 0 0;
+	background-clip: border-box;
+
+	/* Applying a default border raidus of 8px */
+
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+
+	/* A 1px highlight inside of the button */
+
+	-moz-box-shadow: 0 0 1px #fff inset;
+	-webkit-box-shadow: 0 0 1px #fff inset;
+	box-shadow: 0 0 1px #fff inset;
+
+	/* Animating the background positions with CSS3 */
+	/* Currently works only in Safari/Chrome */
+
+	-webkit-transition: background-position 1s;
+	-moz-transition: background-position 1s;
+	transition: background-position 1s;
+}
+
+.button:hover {
+
+	/* The first rule is a fallback, in case the browser
+	   does not support multiple backgrounds
+	*/
+
+	background-position: top left;
+	background-position: top left, bottom right, 0 0, 0 0;
+}
+
+.button:active {
+	/* Moving the button 1px to the bottom when clicked */
+	bottom: -1px;
+}
+
+.button.big {
+	font-size: 30px;
+}
+
+.blue.button {
+	color: #0f4b6d !important;
+
+	border: 1px solid #84acc3 !important;
+
+	/* A fallback background color */
+	background-color: #48b5f2;
+
+	/* Specifying a version with gradients according to */
+
+	background-image: url('button_bg.png'), url('button_bg.png'),
+		-moz-radial-gradient(center bottom, circle,
+			rgba(89, 208, 244, 1) 0, rgba(89, 208, 244, 0) 100px),
+		-moz-linear-gradient(#4fbbf7, #3faeeb);
+
+	background-image: url('button_bg.png'), url('button_bg.png'),
+		-webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100,
+			from(rgba(89, 208, 244, 1)), to(rgba(89, 208, 244, 0))),
+		-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4fbbf7), to(#3faeeb));
+}
+
+.blue.button:hover {
+	background-color: #63c7fe;
+
+	background-image: url('button_bg.png'), url('button_bg.png'),
+		-moz-radial-gradient(center bottom, circle,
+			rgba(109, 217, 250, 1) 0, rgba(109, 217, 250, 0) 100px),
+		-moz-linear-gradient(#63c7fe, #58bef7);
+
+	background-image: url('button_bg.png'), url('button_bg.png'),
+		-webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100,
+			from(rgba(109, 217, 250, 1)), to(rgba(109, 217, 250, 0))),
+		-webkit-gradient(linear, 0% 0%, 0% 100%, from(#63c7fe), to(#58bef7));
+}
+
+/* Green Button */
+
+.green.button {
+	color: #345903 !important;
+	border: 1px solid #96a37b !important;
+	background-color: #79be1e;
+
+	background-image: url('button_bg.png'), url('button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(162, 211, 30, 1) 0, rgba(162, 211, 30, 0) 100px), -moz-linear-gradient(#82cc27, #74b317);
+	background-image: url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(162, 211, 30, 1)), to(rgba(162, 211, 30, 0))), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#82cc27), to(#74b317));
+}
+
+.green.button:hover {
+	background-color: #89d228;
+
+	background-image: url('button_bg.png'), url('button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(183, 229, 45, 1) 0, rgba(183, 229, 45, 0) 100px), -moz-linear-gradient(#90de31, #7fc01e);
+	background-image: url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(183, 229, 45, 1)), to(rgba(183, 229, 45, 0))), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#90de31), to(#7fc01e));
+}
+
+footer {
+	padding-bottom: 1rem;
+	background-color: #333333;
+	font-size: 1rem;
+}
+
+
+.contact_wrapper {
+	margin-top: 30px;
+	display: flex;
+	gap: 3rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact_wrapper img {
+	width: 50px;
+	height: 50px;
+}
+
+.footer_copyright {
+	justify-content: center;
+	text-align: center;
+	color: white;
+	margin-top: 1rem;
+	line-height: 30px;
+	border-top: 1px
+}
+
+.ssa {
+	letter-spacing: 3px;
+}
+
+@media (max-width: 1180px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 600px) {
+	main {
+		height: 330px;
+	}
+
+	.u-section-1 {
+		padding-top: 150px;
+		padding-left: 65px;
+		line-height: 45px;
+	}
+	
+	.u-section-1 .u-text-1 {
+		text-transform: uppercase;
+		font-weight: 500;
+		line-height: 35px;
+		font-size: 1.5rem;
+		color: white;
+		text-shadow: 3px 3px 3px #222;
+	}
+	
+	.u-section-1 .u-text-2 {
+		font-size: 15px;
+		color: greenyellow;
+		text-shadow: 2px 2px 2px #222;
+	}
+
+	#buttonContainer {
+		gap: 30px;
+	}
+
+	.button{
+		font: 15px Calibri, Arial, sans-serif;
+		padding: 5px 15px;
+
+	}
+
+	.button.big {
+		font-size: 15px;
+	}
+
+	.contact_wrapper img {
+		width: 40px;
+		height: 40px;
+	}
+}
+@media (max-width: 450px) {
+	main {
+		height: 280px;
+	}
+
+	.u-section-1 {
+		padding-top: 125px;
+		padding-left: 35px;
+		line-height: 38px;
+	}
+	.u-section-1 .u-text-1 {
+		text-transform: uppercase;
+		font-weight: 400;
+		line-height: 30px;
+		font-size: 1.2rem;
+		color: white;
+		text-shadow: 2px 2px 2px #222;
+	}
+	
+	.u-section-1 .u-text-2 {
+		font-size: 13px;
+		color: greenyellow;
+		text-shadow: 2px 2px 2px #222;
+	}
+
+	#buttonContainer {
+		gap: 30px;
+	}
+
+	.button{
+		font: 20px Calibri, Arial, sans-serif;
+		padding: 5px 15px;
+
+	}
+
+	.button.big {
+		font-size: 12px;
+	}
+
+	.contact_wrapper img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.footer_copyright{
+		font-size: .8rem;
+		line-height: 20px;
+	}
+}
+@media (max-width: 375px) {
+	main {
+		height: 250px;
+	}
+
+	.u-section-1 {
+		padding-top: 110px;
+		padding-left: 25px;
+		line-height: 38px;
+	}
+	.button{
+		font: 15px Calibri, Arial, sans-serif;
+		padding: 5px 15px;
+
+	}
+
+	.button.big {
+		font-size: 12px;
+	}
+}
