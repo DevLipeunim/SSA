@@ -31,8 +31,8 @@ main {
 
 .u-section-1 {
 	padding-top: 390px;
-	padding-left: 150px;
-	line-height: 100px;
+	padding-left: 190px;
+	line-height: 78px;
 }
 
 .u-section-1 .u-text-1 {
@@ -47,6 +47,12 @@ main {
 .u-section-1 .u-text-2 {
 	font-size: 30px;
 	color: greenyellow;
+	text-shadow: 2px 2px 2px #222;
+}
+
+.u-section-1 .u-text-3 {
+	font-size: 27px;
+	color: white;
 	text-shadow: 2px 2px 2px #222;
 }
 
@@ -182,14 +188,21 @@ main {
 footer {
 	padding-bottom: 1rem;
 	background-color: #333333;
-	font-size: 1rem;
+	font-size: 1.3rem;
+}
+.contact_container p{
+	justify-content: center;
+	text-align: center;
+	color: white;
+	letter-spacing: 2px;
+	margin-top: 1rem;
+	font-size: 1.3rem;
 }
 
-
 .contact_wrapper {
-	margin-top: 30px;
+	margin-top: 15px;
 	display: flex;
-	gap: 3rem;
+	gap: 2.5rem;
 	align-items: center;
 	justify-content: center;
 }
@@ -204,88 +217,214 @@ footer {
 	text-align: center;
 	color: white;
 	margin-top: 1rem;
-	line-height: 30px;
-	border-top: 1px
+	line-height: 25px;
 }
 
 .ssa {
-	letter-spacing: 3px;
+	letter-spacing: 2px;
+	font-weight: 500;
 }
 
-@media (max-width: 1180px) {}
-
-@media (max-width: 991px) {}
-
-@media (max-width: 767px) {}
-
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
 	main {
-		height: 330px;
+		height: 670px;
 	}
 
 	.u-section-1 {
-		padding-top: 150px;
-		padding-left: 65px;
-		line-height: 45px;
+		padding-top: 310px;
+		padding-left: 140px;
+		line-height: 60px;
 	}
-	
 	.u-section-1 .u-text-1 {
-		text-transform: uppercase;
 		font-weight: 500;
-		line-height: 35px;
-		font-size: 1.5rem;
-		color: white;
-		text-shadow: 3px 3px 3px #222;
+		line-height: 65px;
+		font-size: 3rem;
 	}
 	
 	.u-section-1 .u-text-2 {
-		font-size: 15px;
-		color: greenyellow;
-		text-shadow: 2px 2px 2px #222;
+		font-size: 26px;
+	}
+
+	.u-section-1 .u-text-3 {
+		font-size: 26px;
 	}
 
 	#buttonContainer {
-		gap: 30px;
+		gap: 60px;
 	}
 
 	.button{
-		font: 15px Calibri, Arial, sans-serif;
+		font: 30px Calibri, Arial, sans-serif;
 		padding: 5px 15px;
 
 	}
 
 	.button.big {
-		font-size: 15px;
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 991px) /* Chrome Desktop site */ {
+	main {
+		height: 670px;
+	}
+
+	.u-section-1 {
+		padding-top: 310px;
+		padding-left: 125px;
+		line-height: 60px;
+	}
+	.u-section-1 .u-text-1 {
+		font-weight: 500;
+		line-height: 65px;
+		font-size: 3rem;
+	}
+	
+	.u-section-1 .u-text-2 {
+		font-size: 26px;
+	}
+
+	.u-section-1 .u-text-3 {
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 915px) {
+	main {
+		height: 640px;
+	}
+
+	.u-section-1 {
+		padding-top: 280px;
+		padding-left: 120px;
+		line-height: 60px;
+	}
+
+	.u-section-1 .u-text-1 {
+		font-weight: 500;
+		line-height: 60px;
+		font-size: 2.7rem;
+	}
+}
+
+@media (max-width: 768px) {
+	main {
+		height: 530px;
+	}
+
+	.u-section-1 {
+		padding-top: 240px;
+		padding-left: 100px;
+		line-height: 50px;
+	}
+	.u-section-1 .u-text-1 {
+		font-weight: 500;
+		line-height: 40px;
+		font-size: 2rem;
+	}
+	
+	.u-section-1 .u-text-2 {
+		font-size: 22px;
+	}
+
+	.u-section-1 .u-text-3 {
+		font-size: 20px;
+	}
+
+	.button{
+		font: 25px Calibri, Arial, sans-serif;
+		padding: 5px 10px;
+
+	}
+
+	.button.big {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 600px) {
+	main {
+		height: 370px;
+	}
+
+	.u-section-1 {
+		padding-top: 160px;
+		padding-left: 75px;
+		line-height: 35px;
+	}
+	.u-section-1 .u-text-1 {
+		text-transform: uppercase;
+		font-weight: 500;
+		line-height: 30px;
+		font-size: 1.5rem;
+	}
+	
+	.u-section-1 .u-text-2 {
+		font-size: 16px;
+	}
+
+	.u-section-1 .u-text-3 {
+		font-size: 16px;
+	}
+
+	#buttonContainer {
+		gap: 40px;
+	}
+
+	.button{
+		font: 25px Calibri, Arial, sans-serif;
+		padding: 5px 15px;
+
+	}
+
+	.button.big {
+		font-size: 16px;
+	}
+
+	.contact_container p{
+		letter-spacing: 1.5px;
+		margin-top: 1rem;
+		font-size: 1rem;
+	}
+
+	.contact_wrapper {
+		margin-top: 10px;
 	}
 
 	.contact_wrapper img {
 		width: 40px;
 		height: 40px;
 	}
+
+	.footer_copyright{
+		font-size: 1rem;
+		line-height: 20px;
+	}
 }
+
 @media (max-width: 450px) {
 	main {
 		height: 280px;
 	}
 
 	.u-section-1 {
-		padding-top: 125px;
-		padding-left: 35px;
-		line-height: 38px;
+		padding-top: 110px;
+		padding-left: 55px;
+		line-height: 30px;
 	}
 	.u-section-1 .u-text-1 {
 		text-transform: uppercase;
-		font-weight: 400;
-		line-height: 30px;
+		font-weight: 500;
+		line-height: 27px;
 		font-size: 1.2rem;
-		color: white;
-		text-shadow: 2px 2px 2px #222;
 	}
 	
 	.u-section-1 .u-text-2 {
+		font-size: 14px;
+	}
+
+	.u-section-1 .u-text-3 {
 		font-size: 13px;
-		color: greenyellow;
-		text-shadow: 2px 2px 2px #222;
 	}
 
 	#buttonContainer {
@@ -294,12 +433,22 @@ footer {
 
 	.button{
 		font: 20px Calibri, Arial, sans-serif;
-		padding: 5px 15px;
+		padding: 5px 13px;
 
 	}
 
 	.button.big {
 		font-size: 12px;
+	}
+
+	.contact_container p{
+		letter-spacing: 1.3px;
+		margin-top: .5rem;
+		font-size: .8rem;
+	}
+
+	.contact_wrapper {
+		margin-top: 10px;
 	}
 
 	.contact_wrapper img {
@@ -312,23 +461,94 @@ footer {
 		line-height: 20px;
 	}
 }
+
 @media (max-width: 375px) {
 	main {
 		height: 250px;
 	}
 
 	.u-section-1 {
-		padding-top: 110px;
-		padding-left: 25px;
-		line-height: 38px;
+		padding-top: 103px;
+		padding-left: 55px;
+		line-height: 28px;
 	}
+
+	.u-section-1 .u-text-1 {
+		font-weight: 400;
+		line-height: 22px;
+		font-size: 17px;
+	}
+	
+	.u-section-1 .u-text-2 {
+		font-size: 13px;
+	}
+
+	.u-section-1 .u-text-3 {
+		font-size: 13px;
+	}
+
 	.button{
 		font: 15px Calibri, Arial, sans-serif;
-		padding: 5px 15px;
-
+		padding: 5px 10px;
 	}
 
 	.button.big {
 		font-size: 12px;
+	}
+
+	.contact_container p{
+		margin-top: .6rem;
+	}
+}
+
+@media (max-width: 320px){
+	main {
+		height: 200px;
+	}
+
+	.u-section-1 {
+		padding-top: 90px;
+		padding-left: 50px;
+		line-height: 25px;
+	}
+
+	.u-section-1 .u-text-1 {
+		font-weight: 500;
+		line-height: 17px;
+		font-size: 12.5px;
+	}
+	
+	.u-section-1 .u-text-2 {
+		font-size: 9.5px;
+	}
+
+	.u-section-1 .u-text-3 {
+		font-size: 9.5px;
+	}
+
+	.button{
+		font: 25px Calibri, Arial, sans-serif;
+		padding: 3px 7px;
+
+	}
+
+	.button.big {
+		font-size: 9px;
+	}
+
+	.contact_container p{
+		margin-top: .5rem;
+	}
+
+	.contact_wrapper img {
+		width: 25px;
+		height: 25px;
+	}
+	
+	.contact_wrapper {
+		gap: 1.5rem;
+	}
+	.ssa {
+		letter-spacing: 1.5px;
 	}
 }
